@@ -1,0 +1,135 @@
+{
+    "CompUnits": {
+        "GcsCL_d": {
+            "archive": "archive.6/_14829_archive_1.a",
+            "mod": "Mux4_tb",
+            "mode": 4,
+            "text": 3792,
+            "out": "GcsCL_d.o",
+            "checksum": 0,
+            "bytes": 20104
+        }
+    },
+    "Modules": {
+        "...MASTER...": {
+            "nRouts": 5,
+            "start_perf": [
+                0.25994396209716797,
+                0.103684,
+                0.094867000000000007,
+                278436,
+                291736,
+                1657011489.146806,
+                60222171320866018
+            ],
+            "child_modules": {
+                "Mux4_tb": 1
+            },
+            "nMops": 0,
+            "end_perf": [
+                0.2737729549407959,
+                0.106364,
+                0.099339999999999998,
+                279600,
+                291736,
+                60222171356957542,
+                0,
+                0
+            ],
+            "nQuads": 0
+        },
+        "Mux4_tb": {
+            "start_perf": [
+                0.27402305603027344,
+                0.106364,
+                0.099571999999999994,
+                279600,
+                291736,
+                1657011489.1608851,
+                60222171357492760
+            ],
+            "child_modules": {},
+            "Compiled": "Yes",
+            "Compiled Times": 7,
+            "significant_routs": [
+                [
+                    1,
+                    "X_VCSgd_GcsCL_0_0",
+                    5613192,
+                    336,
+                    64
+                ],
+                [
+                    7,
+                    "R_VCSgd_GcsCL_7",
+                    3436336,
+                    699,
+                    130
+                ],
+                [
+                    8,
+                    "R_VCSgd_GcsCL_8",
+                    4693072,
+                    1016,
+                    189
+                ]
+            ],
+            "end_perf": [
+                0.29204392433166504,
+                0.117969,
+                0.105972,
+                283256,
+                291736,
+                60222171404350609,
+                8589934593,
+                0
+            ],
+            "nMops": 617,
+            "nQuads": 248,
+            "nRouts": 18
+        }
+    },
+    "reusePaths": {
+        "amcQw_d": {
+            "icPath": "csrc"
+        }
+    },
+    "ObjArchives": [
+        {
+            "archive": "archive.6/_14829_archive_1.a",
+            "objects": [
+                [
+                    "GcsCL_d.o",
+                    20104
+                ],
+                [
+                    "amcQwB.o",
+                    106824
+                ]
+            ],
+            "size": 126928
+        }
+    ],
+    "stat": {
+        "ru_self_end": {
+            "ru_utime_sec": 0.12429,
+            "ru_majflt": 0,
+            "ru_stime_sec": 0.109255,
+            "ru_maxrss_kb": 70840,
+            "ru_minflt": 28342,
+            "ru_nvcsw": 32,
+            "ru_nivcsw": 42
+        },
+        "ru_childs_end": {
+            "ru_utime_sec": 0.013929,
+            "ru_majflt": 0,
+            "ru_stime_sec": 0.035445999999999998,
+            "ru_maxrss_kb": 16736,
+            "ru_minflt": 4988,
+            "ru_nvcsw": 9,
+            "ru_nivcsw": 18
+        },
+        "cpu_cycles_end": 60222171429154592,
+        "peak_mem_kb": 291736
+    }
+}

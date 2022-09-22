@@ -1,0 +1,4 @@
+Command Line: /tool/synopsys/verdi/platform/LINUXAMD64/bin/Novas -nWave
+uname(Linux rdlx01 3.10.0-1127.19.1.el7.x86_64 #1 SMP Tue Aug 25 17:23:54 UTC 2020 x86_64)
+Failed to delete /home/rduser08/project/Computer16/ALU/Or4/BSSLib.lib++
+au time 1137388.187483 8115.068846 9604.464782 delta 1526116352 1526116352 total 1951199232 1951199232

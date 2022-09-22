@@ -1,0 +1,50 @@
+{
+    "BinaryCounter4": [
+        "BinaryCounter4",
+        "M1VFv",
+        "module",
+        7
+    ],
+    "CPU_tb": [
+        "CPU_tb",
+        "dpsTH",
+        "module",
+        1
+    ],
+    "FullAdder": [
+        "FullAdder",
+        "n207S",
+        "module",
+        2
+    ],
+    "Mux16": [
+        "Mux16",
+        "Nw6UF",
+        "module",
+        3
+    ],
+    "Bit": [
+        "Bit",
+        "bRHgx",
+        "module",
+        5
+    ],
+    "Add4": [
+        "Add4",
+        "BT7YT",
+        "module",
+        4
+    ],
+    "Register4": [
+        "Register4",
+        "Q3CR3",
+        "module",
+        6
+    ],
+    "...MASTER...": [
+        "SIM",
+        "amcQw",
+        "module",
+        8
+    ]
+}

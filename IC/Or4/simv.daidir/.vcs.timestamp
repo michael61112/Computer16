@@ -1,0 +1,145 @@
+0 
+25
+-Mamsrun=
+-Masflags=
+-Mcc=gcc
+-Mcfl= -pipe -fPIC -O -I/tool/synopsys/vcs/include
+-Mcplusplus=g++
+-Mcrt0=
+-Mcrtn=
+-Mcsrc=
+-Mexternalobj=
+-Mldflags= -rdynamic
+-Mobjects= /tool/synopsys/vcs/linux64/lib/libvirsim.so /tool/synopsys/vcs/linux64/lib/liberrorinf.so /tool/synopsys/vcs/linux64/lib/libsnpsmalloc.so /tool/synopsys/vcs/linux64/lib/libvfs.so
+-Mout=simv
+-Msaverestoreobj=/tool/synopsys/vcs/linux64/lib/vcs_save_restore_new.o
+-Msyslibs=/tool/synopsys/verdi/share/PLI/VCS/LINUX64/pli.a -ldl
+-Mvcsaceobjs=
+-Mxcflags= -pipe -fPIC -I/tool/synopsys/vcs/include
+-P
+-fsdb
+-full64
+-gen_obj
+-picarchive
+/tool/synopsys/vcs/linux64/bin/vcs1
+/tool/synopsys/verdi/share/PLI/VCS/LINUX64/verdi.tab
+Or4.v
+tb/Or4_tb.v
+105
+sysc_uni_pwd=/home/rduser08/project/Computer16/ALU/Or4
+XDG_SESSION_TYPE=x11
+XDG_SESSION_ID=23482
+XDG_SESSION_CLASS=user
+XDG_RUNTIME_DIR=/tmp/.vnc-1008/run
+XDG_MENU_PREFIX=kde4-
+XDG_DATA_DIRS=/usr/share/kde-settings/kde-profile/default/share:/usr/local/share:/usr/share
+XDG_CURRENT_DESKTOP=KDE
+XCURSOR_THEME=Adwaita
+XCELIUM_HOME=/tool/cadence/xcelium/tools
+XAUTHORITY=/tmp/kde-rduser08/xauth-1008-_8
+WV_HOME=/tool/synopsys/wv
+W3264_NO_HOST_CHECK=1
+VTE_VERSION=5202
+VNCDESKTOP=x11
+VMR_MODE_FLAG=64
+VERDI_HOME=/tool/synopsys/verdi
+VENDOR=unknown
+VCS_MX_HOME_INTERNAL=1
+VCS_MODE_FLAG=64
+VCS_HOME=/tool/synopsys/vcs
+VCS_DEPTH=0
+VCS_ARG_ADDED_FOR_TMP=1
+VCS_ARCH=linux64
+UNAME=/bin/uname
+TOOL_HOME=/tool/synopsys/vcs/linux64
+SYNOPSYS_LC_ROOT=/tool/synopsys/pt/bin/
+SYNOPSYS_HOME=/tool/synopsys
+STARRC_HOME=/tool/synopsys/starrc
+SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+SPECTRE_HOME=/tool/cadence/spectre
+SPECTRE_DEFAULTS=-E
+SESSION_MANAGER=local/unix:@/tmp/.ICE-unix/29153,unix/unix:/tmp/.ICE-unix/29153
+SCRNAME=vcs
+SCRIPT_NAME=vcs
+SCL_HOME=/tool/init/scl2018/
+REMOTEHOST=10.25.0.100
+QT_PLUGIN_PATH=/usr/lib64/kde4/plugins:/usr/lib/kde4/plugins:/home/rduser08/.kde/lib64/kde4/plugins/:/usr/lib64/kde4/plugins/
+QT_GRAPHICSSYSTEM_CHECKED=1
+QTLIB=/usr/lib64/qt-3.3/lib
+QTINC=/usr/lib64/qt-3.3/include
+QTDIR=/usr/lib64/qt-3.3
+PULSE_SERVER=/tmp/.vnc-1008/run/session-7478095b0e484a72/pulse/native
+PT_HOME=/tool/synopsys/pt
+PERL_MM_OPT=INSTALL_BASE=/home/rduser08/perl5
+PERL_MB_OPT=--install_base /home/rduser08/perl5
+PERL_LOCAL_LIB_ROOT=/home/rduser08/perl5
+PERL_HOMEDIR=1
+PERL5LIB=/home/rduser08/perl5/lib/perl5
+OVA_UUM=0
+OSTYPE=linux
+OA_UNSUPPORTED_PLAT=linux_rhel50_gcc44x
+NOVAS_HOME=/tool/synopsys/verdi
+MW_HOME=/tool/synopsys/mw
+MGLS_LICENSE_FILE=/tool/mentor/license/license.dat
+MGC_LIB_PATH=/tool/mentor/calibre/aoj_cal_2019.3_15.11/lib
+MGC_HOME=/tool/mentor/calibre/aoj_cal_2019.3_15.11
+MGC_CALIBRE_SAVE_ALL_RUNSET_VALUES=1
+MGC_CALIBRE_REALTIME_VIRTUOSO_SAVE_MESSENGER_CELL=1
+MGC_CALIBRE_REALTIME_VIRTUOSO_ENABLED=1
+MENTOR_HOME=/tool/mentor
+LIBERATE_HOME=/tool/cadence/liberate
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+LC_HOME=/tool/synopsys/lc
+LC_ALL=C
+LAKER_HOME=/tool/synopsys/lakeroa
+KDE_SESSION_VERSION=4
+KDE_SESSION_UID=1008
+KDE_MULTIHEAD=false
+KDE_FULL_SESSION=true
+KDEDIRS=/usr
+ICC_HOME=/tool/synopsys/icc2
+HSPICE_HOME=/tool/synopsys/hspice
+HOSTTYPE=x86_64-linux
+GTK_RC_FILES=/etc/gtk/gtkrc:/home/rduser08/.gtkrc:/home/rduser08/.kde/share/config/gtkrc
+GTK2_RC_FILES=/etc/gtk-2.0/gtkrc:/home/rduser08/.gtkrc-2.0:/home/rduser08/.gtkrc-2.0-kde4:/home/rduser08/.kde/share/config/gtkrc-2.0
+GS_LIB=
+GROUP=rduser
+GNOME_TERMINAL_SERVICE=:1.126
+GNOME_TERMINAL_SCREEN=/org/gnome/Terminal/screen/4790bcc9_2519_4b55_be44_e224d09cdc0d
+DISPLAYNUM=8
+DESKTOP_SESSION=1-kde-plasma-standard
+DC_HOME=/tool/synopsys/dc
+DBUS_SESSION_BUS_ADDRESS=unix:path=/tmp/.vnc-1008/run/session-7478095b0e484a72/bus
+CVS_RSH=ssh
+CONFORMAL_HOME=/tool/cadence/confrml
+COLORTERM=truecolor
+CDS_SPECTRE_FBENABLE=1
+CDS_SPECTRERF_FBENABLE=1
+CDS_ROOT=/tool/cadence/ic618
+CDS_Netlisting_Mode=Analog
+CDS_LOAD_ENV=CWD
+CDS_LIC_ONLY=1
+CDS_LIC_FILE=/tool/cadence/license/license.dat
+CDS_INST_DIR=/tool/cadence/ic618
+CDS_ENABLE_VMS=1
+CDS_AUTO_64BIT=ALL
+CDSROOT=/tool/cadence/ic618
+CDSHOME=/tool/cadence/ic618
+CDSDIR=/tool/cadence/ic618
+CDS=/tool/cadence/ic618
+CALIBRE_HOME=/tool/mentor/calibre/aoj_cal_2019.3_15.11
+CALIBRE_ENABLE_SKILL_PEXBA_MODE=1
+CADHOME=/tool/cadence
+CADENCE_DIR=/tool/cadence/ic618
+0
+3
+1656551743 Or4.v
+1656560463 tb/Or4_tb.v
+1550753332 /tool/synopsys/verdi/share/PLI/VCS/LINUX64/verdi.tab
+4
+1551422344 /tool/synopsys/vcs/linux64/lib/libvirsim.so
+1551421792 /tool/synopsys/vcs/linux64/lib/liberrorinf.so
+1551421768 /tool/synopsys/vcs/linux64/lib/libsnpsmalloc.so
+1551421789 /tool/synopsys/vcs/linux64/lib/libvfs.so
+1656560474 simv.daidir
+-1 partitionlib

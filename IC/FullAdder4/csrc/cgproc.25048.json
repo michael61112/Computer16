@@ -1,0 +1,167 @@
+{
+    "Modules": {
+        "...MASTER...": {
+            "nMops": 0,
+            "start_perf": [
+                0.25876903533935547,
+                0.091739000000000001,
+                0.095533999999999994,
+                278608,
+                291744,
+                1657008045.023361,
+                60213216646759312
+            ],
+            "child_modules": {
+                "FullAdder4_tb": 1
+            },
+            "nRouts": 5,
+            "end_perf": [
+                0.27191805839538574,
+                0.093631000000000006,
+                0.100678,
+                280016,
+                291744,
+                60213216681044336,
+                0,
+                0
+            ],
+            "nQuads": 0
+        },
+        "FullAdder4_tb": {
+            "nMops": 1224,
+            "start_perf": [
+                0.27217411994934082,
+                0.093631000000000006,
+                0.10091600000000001,
+                280016,
+                291744,
+                1657008045.0367661,
+                60213216681660198
+            ],
+            "Compiled": "Yes",
+            "significant_routs": [
+                [
+                    1,
+                    "X_VCSgd_ZyRqV_0_0",
+                    4748408,
+                    187,
+                    40
+                ],
+                [
+                    16,
+                    "R_VCSgd_ZyRqV_10",
+                    8582492,
+                    2326,
+                    505
+                ],
+                [
+                    17,
+                    "R_VCSgd_ZyRqV_11",
+                    4902888,
+                    1310,
+                    224
+                ]
+            ],
+            "child_modules": {
+                "FullAdder": 4
+            },
+            "Compiled Times": 2,
+            "nRouts": 27,
+            "end_perf": [
+                0.29392910003662109,
+                0.10864699999999999,
+                0.107641,
+                284128,
+                291744,
+                60213216738232069,
+                8589934593,
+                0
+            ],
+            "nQuads": 430
+        },
+        "FullAdder": {
+            "nMops": 290,
+            "Compiled": "Yes",
+            "start_perf": [
+                0.29403400421142578,
+                0.1087,
+                0.107693,
+                284128,
+                291744,
+                1657008045.0586259,
+                60213216738447415
+            ],
+            "child_modules": {},
+            "Compiled Times": 2,
+            "nRouts": 17,
+            "end_perf": [
+                0.29815196990966797,
+                0.112259,
+                0.10825,
+                284128,
+                291744,
+                60213216749208184,
+                17179869185,
+                0
+            ],
+            "nQuads": 150
+        }
+    },
+    "CompUnits": {
+        "ZyRqV_d": {
+            "out": "ZyRqV_d.o",
+            "mod": "FullAdder4_tb",
+            "bytes": 25508,
+            "text": 6680,
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.1/_25048_archive_1.a"
+        }
+    },
+    "reusePaths": {
+        "amcQw_d": {
+            "icPath": "csrc"
+        },
+        "n207S_d": {
+            "icPath": "csrc"
+        }
+    },
+    "stat": {
+        "peak_mem_kb": 291744,
+        "ru_self_end": {
+            "ru_utime_sec": 0.118357,
+            "ru_stime_sec": 0.111336,
+            "ru_nivcsw": 46,
+            "ru_maxrss_kb": 72340,
+            "ru_majflt": 0,
+            "ru_minflt": 28697,
+            "ru_nvcsw": 32
+        },
+        "ru_childs_end": {
+            "ru_utime_sec": 0.017017000000000001,
+            "ru_stime_sec": 0.030235999999999999,
+            "ru_nivcsw": 18,
+            "ru_maxrss_kb": 16880,
+            "ru_majflt": 0,
+            "ru_minflt": 4985,
+            "ru_nvcsw": 9
+        },
+        "cpu_cycles_end": 60213216772955896
+    },
+    "ObjArchives": [
+        {
+            "archive": "archive.1/_25048_archive_1.a",
+            "objects": [
+                [
+                    "ZyRqV_d.o",
+                    25508
+                ],
+                [
+                    "amcQwB.o",
+                    107100
+                ]
+            ],
+            "size": 132608
+        }
+    ]
+}

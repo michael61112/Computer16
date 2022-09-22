@@ -1,0 +1,128 @@
+{
+    "Modules": {
+        "...MASTER...": {
+            "start_perf": [
+                0.22611904144287109,
+                0.085525000000000004,
+                0.066629999999999995,
+                278320,
+                291652,
+                1656560473.486172,
+                59049537236638439
+            ],
+            "nRouts": 5,
+            "child_modules": {
+                "Or4_tb": 1
+            },
+            "end_perf": [
+                0.23519515991210938,
+                0.087387000000000006,
+                0.069513000000000005,
+                279604,
+                291652,
+                59049537260297095,
+                0,
+                0
+            ],
+            "nQuads": 0,
+            "nMops": 0
+        },
+        "Or4_tb": {
+            "start_perf": [
+                0.23534417152404785,
+                0.087464,
+                0.069572999999999996,
+                279604,
+                291652,
+                1656560473.4953971,
+                59049537260622864
+            ],
+            "nRouts": 17,
+            "child_modules": {},
+            "nQuads": 318,
+            "Compiled": "Yes",
+            "Compiled Times": 5,
+            "end_perf": [
+                0.24701404571533203,
+                0.096226999999999993,
+                0.072417999999999996,
+                283204,
+                291652,
+                59049537291022760,
+                8589934593,
+                0
+            ],
+            "significant_routs": [
+                [
+                    8,
+                    "R_VCSgd_C4bxu_8",
+                    3993113,
+                    733,
+                    153
+                ],
+                [
+                    9,
+                    "R_VCSgd_C4bxu_9",
+                    2828316,
+                    897,
+                    155
+                ]
+            ],
+            "nMops": 826
+        }
+    },
+    "CompUnits": {
+        "C4bxu_d": {
+            "mod": "Or4_tb",
+            "checksum": 0,
+            "out": "C4bxu_d.o",
+            "text": 2748,
+            "bytes": 16832,
+            "archive": "archive.4/_22168_archive_1.a",
+            "mode": 4
+        }
+    },
+    "reusePaths": {
+        "amcQw_d": {
+            "icPath": "csrc"
+        }
+    },
+    "ObjArchives": [
+        {
+            "size": 123266,
+            "archive": "archive.4/_22168_archive_1.a",
+            "objects": [
+                [
+                    "C4bxu_d.o",
+                    16832
+                ],
+                [
+                    "amcQwB.o",
+                    106434
+                ]
+            ]
+        }
+    ],
+    "stat": {
+        "ru_self_end": {
+            "ru_maxrss_kb": 70228,
+            "ru_utime_sec": 0.100133,
+            "ru_stime_sec": 0.076339000000000004,
+            "ru_nvcsw": 27,
+            "ru_minflt": 28149,
+            "ru_majflt": 0,
+            "ru_nivcsw": 70
+        },
+        "ru_childs_end": {
+            "ru_maxrss_kb": 16544,
+            "ru_utime_sec": 0.0099819999999999996,
+            "ru_stime_sec": 0.024777,
+            "ru_nvcsw": 9,
+            "ru_minflt": 4988,
+            "ru_majflt": 0,
+            "ru_nivcsw": 22
+        },
+        "cpu_cycles_end": 59049537311304923,
+        "peak_mem_kb": 291652
+    }
+}

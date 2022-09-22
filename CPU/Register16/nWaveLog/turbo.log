@@ -1,0 +1,3 @@
+Command Line: /tool/synopsys/verdi/platform/LINUXAMD64/bin/Novas -nWave
+uname(Linux rdlx01 3.10.0-1127.19.1.el7.x86_64 #1 SMP Tue Aug 25 17:23:54 UTC 2020 x86_64)
+au time 144.852661 4.026389 1.593595 delta 1055989760 1055989760 total 1481072640 1481072640
