@@ -49,7 +49,7 @@ module CPU(
     assign f = instruction[7];
     assign no = instruction[6];
     
-    Mux16 mux0(instruction, ALUout, ALUtoA, Aregin);
+    Mux16 mux0(.a(instruction), .b(ALUout), .sel(ALUtoA), .out(Aregin));
     Register16 Areg(.in(Aregin), .clock(clk), .load(loadA), .rst_n(rst_n), .out(Aout));
     Mux16 mux1(.a(Aout), .b(inM), .sel(selM), .out(AMout));
     Register16 Dreg(.in(ALUout), .clock(clk), .load(loadD), .rst_n(rst_n), .out(Dout));
