@@ -23,7 +23,6 @@ module CPU(
     wire ZRout, NGout, PCload, PCinc;
     wire zx, nx, zy, ny, f, no;
     wire [15:0] pc_temp;
-    wire tt;
     assign z = loadA;
     assign n = ALUtoA;
     InstructionHandling IH(
@@ -76,8 +75,7 @@ module CPU(
         .load(PCload),
         .inc(PCinc),
         .reset(reset),
-        .out(pc_temp) , //[14:0]
-        .t(tt)
+        .out(pc_temp) //[14:0]
     );
     assign pc = pc_temp[14:0];
 endmodule;
@@ -103,15 +101,7 @@ module Control(
     input [15:0] instruction,
     output PCload, PCinc
 );
-//    reg jeq, jlt, jgt, jumpToA;
-//    always@(posedge clk) begin
-//        jeq <= ZRout & instruction[1];
-//        jlt <= NGout & instruction[2];
-//        jgt <= !(ZRout | NGout) & instruction[0];
-//        jumpToA <= jeq | jlt | jgt;
-//        PCload <= instruction[15] & jumpToA;
-//        PCinc <= !PCload;
-//    end
+
     assign jeq = ZRout & instruction[1];
     assign jlt = NGout & instruction[2];
     assign jgt = !(ZRout | NGout) & instruction[0];
