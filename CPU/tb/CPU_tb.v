@@ -6,7 +6,7 @@ module CPU_tb ();
     reg  [15:0] i_data_inM;
     reg  [15:0] i_data_instruction;
     reg         i_data_reset;
-    reg         i_rst_n;
+   // reg         i_rst_n;
     wire  [15:0] o_data_outM;
     wire         o_data_writeM;
     wire  [14:0] o_data_addressM;
@@ -41,7 +41,7 @@ module CPU_tb ();
         .instruction    (i_data_instruction ),
         .reset          (i_data_reset       ),
         .clk            (i_clk              ),
-        .rst_n          (i_rst_n),
+     //   .rst_n          (i_rst_n),
 
         .outM           (o_data_outM        ),
         .writeM         (o_data_writeM      ),
@@ -62,12 +62,12 @@ module CPU_tb ();
     initial begin
         i = -1;
         i_data_reset = 1;
-        i_rst_n = 0;
+       // i_rst_n = 0;
         #15
         i_data_inM = 16'b0;
         i_data_instruction = 16'b0;
         i_data_reset = 0;
-        i_rst_n = 1;
+      //  i_rst_n = 1;
         while (i < `PAT_NUM -1) begin
         //    @(o_data_pc) begin
         //        i_data_instruction = pat_instruction [i+1];

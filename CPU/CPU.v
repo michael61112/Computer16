@@ -9,7 +9,8 @@ module CPU(
     input   [15:0] instruction, // Instruction for execution
     input   reset,           // Signals whether to re-start the current program
     input   clk,             // (reset == 1) or continue executing the current
-    input   rst_n,           // program (reset == 0).
+  //  input   rst_n,           // program (reset == 0).
+//    input   ram_available,
 
     output  [15:0] outM,        // M value output
     output  writeM,          // Write into M? 
@@ -23,8 +24,10 @@ module CPU(
     wire ZRout, NGout, PCload, PCinc;
     wire zx, nx, zy, ny, f, no;
     wire [15:0] pc_temp;
+
     assign z = loadA;
     assign n = ALUtoA;
+    assign rst_n = !reset;
     InstructionHandling IH(
         .instruction(instruction),
         .ALUtoA(ALUtoA),
@@ -39,6 +42,7 @@ module CPU(
         .NGout(NGout),
         .clk(clk),
         .instruction(instruction),
+//	.ram_available(ram_available),
         .PCload(PCload),
         .PCinc(PCinc)
     );
@@ -74,7 +78,7 @@ module CPU(
         .clock(clk),
         .load(PCload),
         .inc(PCinc),
-        .reset(reset),
+        .rst_n(rst_n),
         .out(pc_temp) //[14:0]
     );
     assign pc = pc_temp[14:0];
@@ -83,9 +87,12 @@ endmodule;
         
 module InstructionHandling(
     input[15:0] instruction,
+//    input ram_available,
     output ALUtoA, loadA, selM, loadD, writeM
 );
     wire Ainstruction, Cinstruction;
+//    wire WaitForRAM, Stall;
+
     assign Ainstruction = !instruction[15];
     assign Cinstruction = instruction[15];
     assign ALUtoA = Cinstruction  & instruction[5];
@@ -94,6 +101,8 @@ module InstructionHandling(
     assign loadD = Cinstruction & instruction[4];
     assign writeM = Cinstruction & instruction[3];
 
+//    assign WaitForRAM = Cinstruction & (selM | writeM) & (~ram_available);
+//    assign Stall = WaitForRAM | ()
 endmodule;
     
 module Control(
@@ -101,7 +110,7 @@ module Control(
     input [15:0] instruction,
     output PCload, PCinc
 );
-
+//    assign  = 
     assign jeq = ZRout & instruction[1];
     assign jlt = NGout & instruction[2];
     assign jgt = !(ZRout | NGout) & instruction[0];

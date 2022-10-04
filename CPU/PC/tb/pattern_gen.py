@@ -2,7 +2,7 @@ filepath = 'PC.cmp'
 f = open(filepath,'r')
 # Open files
 fp_in = open("pat_in.dat", "w")
-fp_reset = open("pat_reset.dat", "w")
+fp_rst_n = open("pat_rst_n.dat", "w")
 fp_load = open("pat_load.dat", "w")
 fp_inc = open("pat_inc.dat", "w")
 fp_golden = open("golden.dat", "w") 
@@ -22,6 +22,10 @@ for pat in patternL:
     else:
         inp = hex(int(pat[2],10))
     reset = hex(int(pat[3],2))
+    if reset == '0x1':
+        rst_n = '0x0'
+    else:
+        rst_n = '0x1'
     load = hex(int(pat[4],10))
     inc = hex(int(pat[5],2))
     if int(pat[6],10) < 0 :
@@ -33,7 +37,7 @@ for pat in patternL:
         fp_in.write(f'{inp[3:]}\n')
     else:
         fp_in.write(f'{inp[2:]}\n')
-    fp_reset.write(f'{reset[2:]}\n')
+    fp_rst_n.write(f'{rst_n[2:]}\n')
     fp_load.write(f'{load[2:]}\n')
     fp_inc.write(f'{inc[2:]}\n')
 
@@ -45,7 +49,7 @@ for pat in patternL:
 
 # Close files
 fp_in.close()
-fp_reset.close()
+fp_rst_n.close()
 fp_load.close()
 fp_inc.close()
 fp_golden.close()
